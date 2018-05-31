@@ -1,0 +1,17 @@
+{
+  "name": "amazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jinay",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-asin": "^0.9.3",
+    "amazon-product-api": "^0.4.4",
+    "aws-sdk": "^2.247.1",
+    "express": "^4.16.3"
+  }
+}
