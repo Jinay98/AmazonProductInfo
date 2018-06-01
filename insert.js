@@ -1,9 +1,9 @@
 var AWS = require('aws-sdk');
 var amazonAsin = require('amazon-asin');
 var region = "us-east-2";
-var accessKeyId = "Enter your access key for dynamo";
-var secretAccessKey = "Enter the secret access key" ;
-var tableName = "Enter your dynamo db table name";
+var accessKeyId = "AKIAJJOE6AEHPUZBHOPA";
+var secretAccessKey = "6LCAqmMOi3anac7G4WyCnYwnJ7kEx9O0b18iOOUh" ;
+var tableName = "Amazon";
 var amazon = require('amazon-product-api');
 var express = require('express')
 var app = express()
@@ -25,9 +25,9 @@ function main()
 var ans=amazonAsin.syncParseAsin("https://www.amazon.com/Royal-20-Piece-Silverware-Set-Stainless/dp/B01120Q6O0/ref=br_msw_pdt-4?_encoding=UTF8&smid=A1TAB9STHMJYHV&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=&pf_rd_r=AZF05JTMM4HN3M8EMDQR&pf_rd_t=36701&pf_rd_p=9b5dfc49-bc18-4ded-84d4-6a2f86dabe91&pf_rd_i=desktop");
 console.log(ans.ASIN);
 var client = amazon.createClient({
-    awsId: "Enter your AWS ID",
-    awsSecret: "Enter your secret access key",
-    awsTag: "Enter your Tag"
+    awsId: "AKIAJMQJC7YXV6BBEUJA",
+    awsSecret: "699g6Y97Si4lLzJ1wMu0yMDTCzIPcnk67lUHviHD",
+    awsTag: "qwikby0b-20"
   });
 
   var indexi,indexj;
